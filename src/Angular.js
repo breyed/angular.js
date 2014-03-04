@@ -108,9 +108,9 @@
  * @module ng
  * @function
  *
- * @description Converts the specified string to lowercase.
+ * @description Converts the specified string to lowercase. This function differs from string.ToLowerCase in that it returns non-strings unchanged and works around works for all locales.'
  * @param {string} string String to be converted to lowercase.
- * @returns {string} Lowercased string.
+ * @returns {string} Lowercased string, or the parameter unchanged if it is not a string.
  */
 var lowercase = function(string){return isString(string) ? string.toLowerCase() : string;};
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -121,9 +121,9 @@ var hasOwnProperty = Object.prototype.hasOwnProperty;
  * @module ng
  * @function
  *
- * @description Converts the specified string to uppercase.
+ * @description Converts the specified string to uppercase. This function differs from string.ToUpperCase in that it returns non-strings unchanged and works around works for all locales.'
  * @param {string} string String to be converted to uppercase.
- * @returns {string} Uppercased string.
+ * @returns {string} Uppercased string, or the parameter unchanged if it is not a string.
  */
 var uppercase = function(string){return isString(string) ? string.toUpperCase() : string;};
 
